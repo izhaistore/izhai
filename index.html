@@ -140,7 +140,7 @@
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1539008835657-9e8e9680c956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://i.pinimg.com/736x/eb/7d/43/eb7d437cb9d9b776c0d460df81b3a0e3.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -307,6 +307,8 @@
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             transition: var(--transition);
+            text-align: center;
+            padding: 30px 20px;
         }
 
         .collection-item:hover {
@@ -314,14 +316,18 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
 
-        .collection-img {
-            height: 250px;
-            width: 100%;
-            object-fit: cover;
+        .collection-icon {
+            font-size: 3.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .collection-info {
-            padding: 20px;
+            padding: 0;
         }
 
         .collection-info h3 {
@@ -357,11 +363,13 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: 500px;
         }
 
         .about-image img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
             display: block;
         }
 
@@ -641,7 +649,9 @@
             
             <div class="collection-grid">
                 <div class="collection-item">
-                    <img src="https://images.unsplash.com/photo-1568259540490-2d5c6e4c9c1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Sarees" class="collection-img">
+                    <div class="collection-icon">
+                        <i class="fas fa-vest"></i>
+                    </div>
                     <div class="collection-info">
                         <h3>Sarees</h3>
                         <p>Elegant silk & cotton sarees with traditional and modern designs.</p>
@@ -649,7 +659,9 @@
                 </div>
                 
                 <div class="collection-item">
-                    <img src="https://images.unsplash.com/photo-1585487000160-6eb9ce6b5a73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2065&q=80" alt="Salwar Sets" class="collection-img">
+                    <div class="collection-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
                     <div class="collection-info">
                         <h3>Salwar Sets</h3>
                         <p>Comfort meets style with our curated collection of salwar kameez.</p>
@@ -657,7 +669,9 @@
                 </div>
                 
                 <div class="collection-item">
-                    <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Bridal Wear" class="collection-img">
+                    <div class="collection-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
                     <div class="collection-info">
                         <h3>Bridal Wear</h3>
                         <p>Special designs for your special day with intricate embroidery.</p>
@@ -665,7 +679,9 @@
                 </div>
                 
                 <div class="collection-item">
-                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Custom Stitching" class="collection-img">
+                    <div class="collection-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
                     <div class="collection-info">
                         <h3>Custom Stitching</h3>
                         <p>Perfect fit, perfect look with our custom tailoring services.</p>
@@ -682,220 +698,4 @@
                 <div class="about-text">
                     <h2>About Izhai Boutique</h2>
                     <p>Izhai Boutique offers unique designs inspired by tradition and modern trends. We focus on quality, elegance, and customer satisfaction in every piece we create.</p>
-                    <p>Our boutique brings together the finest fabrics, exquisite craftsmanship, and contemporary designs to create fashion that celebrates heritage while embracing modern aesthetics.</p>
-                    <p>Founded in Mayiladuthurai, India, we take pride in our attention to detail and commitment to making every customer feel special.</p>
-                    <a href="#contact" class="btn btn-outline" style="margin-top: 20px;">Get In Touch</a>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1558769132-cb1a40ed0ada?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="About Izhai Boutique">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <p class="section-subtitle">Get in touch for inquiries, custom orders, or to be notified when we launch</p>
-            
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Our Details</h3>
-                    <p>We're excited to open our doors on January 1, 2026. Reach out to us for any inquiries or to be added to our launch notification list.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Mayiladuthurai, India</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+91 8883388833</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h4>Email</h4>
-                                <p>izhai.store@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="newsletter">
-                    <h3>Launch Notification</h3>
-                    <p>Be the first to know when we launch! Enter your email below and we'll notify you as soon as our online store is live.</p>
-                    
-                    <form id="notifyForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <button type="submit" class="btn">Notify Me on Launch</button>
-                    </form>
-                    
-                    <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">We respect your privacy and will not share your information.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Izhai Boutique</h3>
-                    <p>Elegance in every thread. Traditional & modern fashion designed with love.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul style="list-style: none;">
-                        <li style="margin-bottom: 10px;"><a href="#home" style="color: #ccc; text-decoration: none;">Home</a></li>
-                        <li style="margin-bottom: 10px;"><a href="#collections" style="color: #ccc; text-decoration: none;">Collections</a></li>
-                        <li style="margin-bottom: 10px;"><a href="#about" style="color: #ccc; text-decoration: none;">About Us</a></li>
-                        <li style="margin-bottom: 10px;"><a href="#contact" style="color: #ccc; text-decoration: none;">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Opening Soon</h3>
-                    <p>Launching on January 1, 2026</p>
-                    <p>Follow us on social media for updates and sneak peeks of our collection!</p>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; 2025 Izhai Boutique. All rights reserved. | Website: izhai.store</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mainNav = document.getElementById('mainNav');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-            mobileMenuBtn.innerHTML = mainNav.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
-        
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                mainNav.classList.remove('active');
-                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-            });
-        });
-        
-        // Countdown Timer
-        const countdown = () => {
-            const launchDate = new Date('January 1, 2026 00:00:00').getTime();
-            const now = new Date().getTime();
-            const timeLeft = launchDate - now;
-            
-            // Calculate days, hours, minutes, seconds
-            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-            
-            // Update the countdown display
-            document.getElementById('days').textContent = days.toString().padStart(2, '0');
-            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-            
-            // If the countdown is over
-            if (timeLeft < 0) {
-                clearInterval(countdownInterval);
-                document.getElementById('days').textContent = '00';
-                document.getElementById('hours').textContent = '00';
-                document.getElementById('minutes').textContent = '00';
-                document.getElementById('seconds').textContent = '00';
-                document.querySelector('.countdown-title').textContent = 'We Are Live!';
-                document.querySelector('.launch-date').textContent = 'Izhai Boutique is now open!';
-            }
-        };
-        
-        // Run countdown every second
-        const countdownInterval = setInterval(countdown, 1000);
-        countdown(); // Initial call
-        
-        // Form Submission
-        const notifyForm = document.getElementById('notifyForm');
-        
-        notifyForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Get form values
-            const name = notifyForm.querySelector('input[type="text"]').value;
-            const email = notifyForm.querySelector('input[type="email"]').value;
-            
-            // In a real implementation, you would send this data to a server
-            // For now, we'll show a confirmation message
-            alert(`Thank you, ${name}! We'll notify you at ${email} when Izhai Boutique launches.`);
-            
-            // Reset the form
-            notifyForm.reset();
-        });
-        
-        // Smooth Scrolling for Navigation Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Header Background on Scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.style.backgroundColor = 'rgba(255, 250, 240, 0.98)';
-                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
-            } else {
-                header.style.backgroundColor = 'rgba(255, 250, 240, 0.95)';
-                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-            }
-        });
-    </script>
-</body>
-</html>
+                    <p>Our boutique brings together the finest fabrics, exquisite craftsmanship, and contemporary designs to create fashion that celebrates heritage while embracing modern aes
